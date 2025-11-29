@@ -1,0 +1,397 @@
+/* Estilos Gerais - Tema Roxo Moderno */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', 'Segoe UI', sans-serif;
+}
+
+body {
+    background-color: #000000;
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Header e Navegação - Design Moderno */
+header {
+    background: linear-gradient(135deg, #6a0dad, #8a2be2);
+    padding: 15px 0;
+    box-shadow: 0 4px 12px rgba(106, 13, 173, 0.3);
+}
+
+.logo {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #fff;
+    text-align: center;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+nav ul li {
+    margin: 0 5px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 8px 16px;
+    border: 2px solid transparent;
+    text-transform: uppercase;
+    font-size: 0.85rem;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+    border-radius: 25px;
+}
+
+nav ul li a:hover {
+    background-color: #fff;
+    color: #6a0dad;
+    border-color: #fff;
+    transform: translateY(-2px);
+}
+
+/* Main Content - Estilo Moderno */
+main {
+    padding: 40px 0;
+    min-height: 70vh;
+}
+
+h1 {
+    color: #6a0dad;
+    margin-bottom: 30px;
+    font-size: 3rem;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border-bottom: 3px solid #8a2be2;
+    padding-bottom: 15px;
+    font-weight: bold;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    color: #6a0dad;
+    font-size: 2.2rem;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+h3 {
+    color: #6a0dad;
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    border-bottom: 2px solid #8a2be2;
+    padding-bottom: 5px;
+    font-weight: bold;
+}
+
+/* Página Inicial - Estilo Hero */
+.hero {
+    text-align: center;
+    padding: 80px 0;
+    background: linear-gradient(135deg, #6a0dad, #8a2be2);
+    color: #fff;
+    border-radius: 15px;
+    margin: 20px 0;
+    box-shadow: 0 8px 25px rgba(106, 13, 173, 0.4);
+}
+
+.hero h1 {
+    font-size: 5rem;
+    margin-bottom: 30px;
+    border: none;
+    letter-spacing: 4px;
+    color: #fff;
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.3);
+}
+
+.hero p {
+    font-size: 1.4rem;
+    max-width: 800px;
+    margin: 0 auto 40px;
+    text-transform: none;
+    letter-spacing: 1px;
+    font-weight: 300;
+}
+
+.btn {
+    background: linear-gradient(135deg, #fff, #e6e6fa);
+    color: #6a0dad;
+    text-decoration: none;
+    padding: 15px 40px;
+    border: 3px solid #fff;
+    border-radius: 30px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: all 0.3s ease;
+    display: inline-block;
+    font-size: 1.1rem;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.btn:hover {
+    background: linear-gradient(135deg, #6a0dad, #8a2be2);
+    color: #fff;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Cards - Design Moderno */
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.card {
+    background: linear-gradient(135deg, #fff, #f8f6ff);
+    border: 2px solid #e6e6fa;
+    border-radius: 15px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    min-height: 200px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 6px 15px rgba(106, 13, 173, 0.1);
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 25px rgba(106, 13, 173, 0.2);
+    border-color: #8a2be2;
+}
+
+.card-img {
+    height: 150px;
+    background: linear-gradient(135deg, #6a0dad, #8a2be2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 4rem;
+    color: #fff;
+}
+
+.card-content {
+    padding: 20px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.card-content h3 {
+    border: none;
+    margin-bottom: 12px;
+    font-size: 1.4rem;
+    color: #6a0dad;
+}
+
+.card-content p {
+    margin-bottom: 8px;
+    line-height: 1.5;
+    font-weight: normal;
+    color: #555;
+}
+
+.card-content strong {
+    color: #6a0dad;
+    font-weight: bold;
+}
+
+/* Formulários - Estilo Moderno */
+.form-group {
+    margin-bottom: 25px;
+    max-width: 450px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 1rem;
+    color: #6a0dad;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+textarea {
+    width: 100%;
+    padding: 12px 15px;
+    background-color: #fff;
+    border: 2px solid #e6e6fa;
+    border-radius: 8px;
+    color: #333;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+input:focus,
+textarea:focus {
+    outline: none;
+    border-color: #8a2be2;
+    box-shadow: 0 0 0 3px rgba(138, 43, 226, 0.1);
+}
+
+input::placeholder,
+textarea::placeholder {
+    color: #999;
+    text-transform: none;
+    font-weight: normal;
+}
+
+button {
+    background: linear-gradient(135deg, #6a0dad, #8a2be2);
+    color: #fff;
+    border: none;
+    padding: 12px 35px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    transition: all 0.3s ease;
+    font-size: 1rem;
+    display: block;
+    margin: 0 auto;
+    box-shadow: 0 4px 15px rgba(106, 13, 173, 0.3);
+}
+
+button:hover {
+    background: linear-gradient(135deg, #8a2be2, #6a0dad);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(106, 13, 173, 0.4);
+}
+
+/* Footer */
+footer {
+    background: linear-gradient(135deg, #6a0dad, #8a2be2);
+    padding: 25px 0;
+    text-align: center;
+    margin-top: 60px;
+    color: #fff;
+}
+
+footer p {
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+/* Links */
+a {
+    color: #8a2be2;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #6a0dad;
+    text-decoration: underline;
+}
+
+/* Mensagens */
+#login-message,
+#register-message {
+    text-align: center;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 15px 0;
+}
+
+/* Feedback específico */
+#feedback-list .card {
+    background: #fff;
+    border-left: 4px solid #8a2be2;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    nav ul li {
+        margin: 5px 0;
+    }
+    
+    .hero h1 {
+        font-size: 3rem;
+        letter-spacing: 2px;
+    }
+    
+    h1 {
+        font-size: 2.2rem;
+    }
+    
+    .card-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    
+    .logo {
+        font-size: 2.2rem;
+    }
+    
+    .hero {
+        padding: 50px 20px;
+        margin: 10px;
+    }
+}
+
+/* Animações suaves */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.card {
+    animation: fadeIn 0.6s ease-out;
+}
+
+/* Efeitos de gradiente para textos */
+.gradient-text {
+    background: linear-gradient(135deg, #6a0dad, #8a2be2);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}

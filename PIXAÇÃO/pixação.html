@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PIXAÇÃO - Arte Urbana</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        /* Estilos adicionais para a página inicial */
+        .hero {
+            position: relative;
+            background: linear-gradient(135deg, rgba(106, 13, 173, 0.9), rgba(138, 43, 226, 0.8)), 
+                        url('https://images.unsplash.com/photo-1541961017774-22349e4a1262?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2000&q=80');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            color: white;
+            text-align: center;
+            padding: 120px 0;
+            border-radius: 15px;
+            margin: 20px 0;
+            box-shadow: 0 10px 30px rgba(106, 13, 173, 0.4);
+            overflow: hidden;
+        }
+
+        .hero h1 {
+            font-size: 5rem;
+            margin-bottom: 25px;
+            text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.5);
+            animation: fadeInUp 1s ease-out;
+        }
+
+        .hero p {
+            font-size: 1.4rem;
+            max-width: 700px;
+            margin: 0 auto 40px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            animation: fadeInUp 1s ease-out 0.3s both;
+        }
+
+        .hero .btn {
+            animation: fadeInUp 1s ease-out 0.6s both;
+        }
+
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin: 60px 0;
+        }
+
+        .feature-card {
+            background: white;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 6px 20px rgba(106, 13, 173, 0.15);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            text-align: center;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 12px 25px rgba(106, 13, 173, 0.25);
+        }
+
+        .feature-img {
+            height: 200px;
+            overflow: hidden;
+        }
+
+        .feature-img img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+
+        .feature-card:hover .feature-img img {
+            transform: scale(1.1);
+        }
+
+        .feature-content {
+            padding: 25px;
+        }
+
+        .feature-content h3 {
+            color: #6a0dad;
+            margin-bottom: 15px;
+            font-size: 1.4rem;
+        }
+
+        .feature-content p {
+            color: #666;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+        .feature-link {
+            display: inline-block;
+            color: #8a2be2;
+            font-weight: bold;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .feature-link:hover {
+            color: #6a0dad;
+            text-decoration: underline;
+        }
+
+        .gallery-preview {
+            margin: 60px 0;
+            text-align: center;
+        }
+
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 15px;
+            margin-top: 30px;
+        }
+
+        .gallery-item {
+            border-radius: 10px;
+            overflow: hidden;
+            height: 200px;
+            position: relative;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .gallery-item:hover {
+            transform: scale(1.05);
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .stats {
+            background: linear-gradient(135deg, #6a0dad, #8a2be2);
+            color: white;
+            padding: 50px 0;
+            border-radius: 15px;
+            margin: 60px 0;
+            text-align: center;
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 30px;
+        }
+
+        .stat-item h3 {
+            font-size: 3rem;
+            margin-bottom: 10px;
+            color: white;
+        }
+
+        .stat-item p {
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+
+        .cta-section {
+            text-align: center;
+            padding: 50px 0;
+            background: #f8f6ff;
+            border-radius: 15px;
+            margin: 60px 0;
+        }
+
+        .cta-section h2 {
+            color: #6a0dad;
+            margin-bottom: 20px;
+        }
+
+        .cta-section p {
+            color: #666;
+            max-width: 600px;
+            margin: 0 auto 30px;
+            font-size: 1.1rem;
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Responsividade */
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 3rem;
+            }
+            
+            .hero p {
+                font-size: 1.1rem;
+            }
+            
+            .features {
+                grid-template-columns: 1fr;
+            }
+            
+            .gallery-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">PIXAÇÃO</div>
+            <nav>
+                <ul>
+                    <li><a href="pixação.html">INÍCIO</a></li>
+                    <li><a href="pixação2.html">PEÇAS</a></li>
+                    <li><a href="pixação3.html">EVENTOS</a></li>
+                    <li><a href="pixação4.html">ESTILOS</a></li>
+                    <li><a href="pixação5.html">ARTISTAS</a></li>
+                    <li><a href="pixação6.html">LOCAIS</a></li>
+                    <li><a href="pixação7.html">FEEDBACK</a></li>
+                    <li><a href="pixação8.html">EQUIPE</a></li>
+                    <li><a href="pixação9.html">LOGIN</a></li>
+                    <li><a href="pixação10.html">CADASTRO</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <!-- Seção Hero -->
+        <section class="hero">
+            <h1>PIXAÇÃO</h1>
+            <p>Descubra o universo vibrante da arte urbana, onde paredes se transformam em telas e ruas viram galerias a céu aberto</p>
+            <a href="pixação2.html" class="btn">Explorar Galeria</a>
+        </section>
+
+        <!-- Seção de Destaques -->
+        <section class="features">
+            <div class="feature-card">
+                <div class="feature-img">
+                    <img src="https://i.ibb.co/nsKXDbfq/image.png" alt="Peças de Arte Urbana">
+                </div>
+                <div class="feature-content">
+                    <h3>PEÇAS ICÔNICAS</h3>
+                    <p>Explore uma coleção curada das obras mais impressionantes do grafite e arte urbana mundial.</p>
+                    <a href="pixação2.html" class="feature-link">Ver Galeria →</a>
+                </div>
+            </div>
+
+            <div class="feature-card">
+                <div class="feature-img">
+                    <img src="https://i.ibb.co/Kj45m0WL/image.png" alt="Artistas de Rua">
+                </div>
+                <div class="feature-content">
+                    <h3>ARTISTAS BRILHANTES</h3>
+                    <p>Conheça os mestres por trás das obras, suas histórias e técnicas revolucionárias.</p>
+                    <a href="pixação5.html" class="feature-link">Conhecer Artistas →</a>
+                </div>
+            </div>
+
+            <div class="feature-card">
+                <div class="feature-img">
+                    <img src="https://i.ibb.co/d0xpGGT9/image.png" alt="Eventos de Arte Urbana">
+                </div>
+                <div class="feature-content">
+                    <h3>EVENTOS EXCLUSIVOS</h3>
+                    <p>Participe de festivais, exposições e encontros da comunidade de arte urbana.</p>
+                    <a href="pixação3.html" class="feature-link">Ver Eventos →</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Galeria Preview -->
+        <section class="gallery-preview">
+            <h2>GALERIA EM DESTAQUE</h2>
+            <p>Uma prévia das obras mais recentes da nossa comunidade</p>
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1547891654-e66ed7ebb968?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" alt="Arte Urbana 1">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1578662996442-48f60103fc96?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" alt="Arte Urbana 2">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1579546929662-711aa81148cf?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" alt="Arte Urbana 3">
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1541961017774-22349e4a1262?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" alt="Arte Urbana 4">
+                </div>
+            </div>
+        </section>
+
+        <!-- Estatísticas -->
+        <section class="stats">
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <h3>500+</h3>
+                    <p>Obras Catalogadas</p>
+                </div>
+                <div class="stat-item">
+                    <h3>150+</h3>
+                    <p>Artistas Registrados</p>
+                </div>
+                <div class="stat-item">
+                    <h3>50+</h3>
+                    <p>Eventos Realizados</p>
+                </div>
+                <div class="stat-item">
+                    <h3>25+</h3>
+                    <p>Cidades Atendidas</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Chamada para Ação -->
+        <section class="cta-section">
+            <h2>JUNTE-SE À NOSSA COMUNIDADE</h2>
+            <p>Cadastre-se para receber atualizações exclusivas, participar de eventos e conectar-se com artistas de todo o mundo</p>
+            <a href="pixação10.html" class="btn">Cadastrar Agora</a>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; PIXAÇÃO - Todos os direitos reservados</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

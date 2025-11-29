@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ARTISTAS - PIXAÇÃO</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        /* Estilos adicionais para as imagens dos artistas */
+        .artist-card {
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .artist-img {
+            height: 250px;
+            overflow: hidden;
+        }
+        
+        .artist-img img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+        
+        .artist-card:hover .artist-img img {
+            transform: scale(1.1);
+        }
+        
+        .artist-info {
+            padding: 20px;
+        }
+        
+        .artist-style {
+            display: inline-block;
+            background: linear-gradient(135deg, #6a0dad, #8a2be2);
+            color: white;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            margin: 5px 0;
+        }
+        
+        .artist-bio {
+            margin-top: 10px;
+            color: #666;
+            line-height: 1.6;
+            font-size: 0.95rem;
+        }
+        
+        .artist-country {
+            color: #6a0dad;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">PIXAÇÃO</div>
+            <nav>
+                <ul>
+                    <li><a href="pixação.html">INÍCIO</a></li>
+                    <li><a href="pixação2.html">PEÇAS</a></li>
+                    <li><a href="pixação3.html">EVENTOS</a></li>
+                    <li><a href="pixação4.html">ESTILOS</a></li>
+                    <li><a href="pixação5.html">ARTISTAS</a></li>
+                    <li><a href="pixação6.html">LOCAIS</a></li>
+                    <li><a href="pixação7.html">FEEDBACK</a></li>
+                    <li><a href="pixação8.html">EQUIPE</a></li>
+                    <li><a href="pixação9.html">LOGIN</a></li>
+                    <li><a href="pixação10.html">CADASTRO</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <h1>ARTISTAS</h1>
+        <p style="text-align: center; color: #666; margin-bottom: 30px; max-width: 800px; margin-left: auto; margin-right: auto;">
+            Conheça os mestres da arte urbana que transformam paredes em galerias a céu aberto e desafiam convenções através de suas expressões artísticas.
+        </p>
+        
+        <div class="card-grid">
+            <!-- Banksy -->
+            <div class="card artist-card">
+                <div class="artist-img">
+                    <img src="https://i.ibb.co/Kj45m0WL/image.png" p&w=1000&q=80" alt="Obra característica de Banksy">
+                </div>
+                <div class="artist-info">
+                    <h3>Banksy</h3>
+                    <p class="artist-country">📍 Reino Unido (Inglaterra)</p>
+                    <span class="artist-style">Arte Conceitual</span>
+                    <span class="artist-style">Stencil</span>
+                    <span class="artist-style">Sátira Social</span>
+                    <div class="artist-bio">
+                        <p>Artista de rua anônimo, Banksy é uma das figuras mais enigmáticas e influentes da arte urbana global. Suas obras, carregadas de crítica social e política, aparecem misteriosamente durante a noite em locais públicos ao redor do mundo.</p>
+                        <p><strong>Obra icônica:</strong> "Girl with Balloon" e os murais na Faixa de Gaza.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Jean-Michel Basquiat (SANO) -->
+            <div class="card artist-card">
+                <div class="artist-img">
+                    <img src="https://i.ibb.co/G377jy6V/image.png" alt="Estilo característico de Basquiat">
+                </div>
+                <div class="artist-info">
+                    <h3>Jean-Michel Basquiat (SANO)</h3>
+                    <p class="artist-country">📍 Estados Unidos</p>
+                    <span class="artist-style">Neo-expressionismo</span>
+                    <span class="artist-style">Grafite</span>
+                    <span class="artist-style">Arte Primitiva</span>
+                    <div class="artist-bio">
+                        <p>Começou sua carreira como grafiteiro nas ruas de Nova York sob o pseudônimo SAMO. Sua transição para as galerias de arte o tornou uma das primeiras estrelas negras do mundo da arte. Suas obras misturam texto, símbolos e figuras com uma estética crua e poderosa.</p>
+                        <p><strong>Obra icônica:</strong> "Untitled" (Caveira) e "Boy and Dog in a Johnnypump".</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Os Gêmeos -->
+            <div class="card artist-card">
+                <div class="artist-img">
+                    <img src="https://i.ibb.co/sJPWQmGL/image.png" alt="Mural característico de Os Gêmeos">
+                </div>
+                <div class="artist-info">
+                    <h3>Os Gêmeos</h3>
+                    <p class="artist-country">📍 Brasil (São Paulo)</p>
+                    <span class="artist-style">Realismo Fantástico</span>
+                    <span class="artist-style">Cultura Brasileira</span>
+                    <span class="artist-style">Murais Coloridos</span>
+                    <div class="artist-bio">
+                        <p>Os irmãos gêmeos Otávio e Gustavo Pandolfo são os artistas de rua brasileiros mais reconhecidos internacionalmente. Seu estilo único caracteriza-se por figuras amarelas alongadas que incorporam elementos do folclore e da cultura popular brasileira.</p>
+                        <p><strong>Obra icônica:</strong> Murais no Beco do Batman e instalações em museus internacionais.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Kobra -->
+            <div class="card artist-card">
+                <div class="artist-img">
+                    <img src="https://i.ibb.co/TJw3MST/image.png" alt="Mural realista de Eduardo Kobra">
+                </div>
+                <div class="artist-info">
+                    <h3>Eduardo Kobra</h3>
+                    <p class="artist-country">📍 Brasil (São Paulo)</p>
+                    <span class="artist-style">Realismo</span>
+                    <span class="artist-style">Murais em Grande Escala</span>
+                    <span class="artist-style">Cores Vibrantes</span>
+                    <div class="artist-bio">
+                        <p>Conhecido por seus enormes murais realistas que retratam figuras históricas e ícones culturais. Seu estilo distintivo utiliza padrões geométricos coloridos que criam um efeito caleidoscópico, tornando suas obras reconhecíveis em todo o mundo.</p>
+                        <p><strong>Obra icônica:</strong> "Etnias" no Rio de Janeiro (maior grafite do mundo) e murais em Nova York.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Shepard Fairey -->
+            <div class="card artist-card">
+                <div class="artist-img">
+                    <img src="https://i.ibb.co/mVf3rL9t/image.png" alt="Arte de protesto de Shepard Fairey">
+                </div>
+                <div class="artist-info">
+                    <h3>Shepard Fairey</h3>
+                    <p class="artist-country">📍 Estados Unidos</p>
+                    <span class="artist-style">Arte de Protesto</span>
+                    <span class="artist-style">Stencil</span>
+                    <span class="artist-style">Design Gráfico</span>
+                    <div class="artist-bio">
+                        <p>Ficou mundialmente famoso com o pôster "Hope" da campanha de Barack Obama em 2008. Seu trabalho combina estética de propaganda com crítica social, frequentemente abordando questões políticas e ambientais através de sua marca Obey Giant.</p>
+                        <p><strong>Obra icônica:</strong> "André the Giant Has a Posse" e a campanha "Hope" de Obama.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Nina Pandolfo -->
+            <div class="card artist-card">
+                <div class="artist-img">
+                    <img src="https://i.ibb.co/57JqpC4/image.png" alt="Arte feminina de Nina Pandolfo">
+                </div>
+                <div class="artist-info">
+                    <h3>Nina Pandolfo</h3>
+                    <p class="artist-country">📍 Brasil (São Paulo)</p>
+                    <span class="artist-style">Arte Feminina</span>
+                    <span class="artist-style">Personagens Lúdicos</span>
+                    <span class="artist-style">Cores Suaves</span>
+                    <div class="artist-bio">
+                        <p>Uma das principais artistas mulheres da cena de arte urbana brasileira. Seu trabalho caracteriza-se por figuras femininas e infantis com olhos grandes e expressivos, explorando temas de inocência, sonho e universo feminino com uma paleta de cores suaves e delicadas.</p>
+                        <p><strong>Obra icônica:</strong> Meninas de olhos grandes e personagens lúdicos em murais.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; PIXAÇÃO - Todos os direitos reservados</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
